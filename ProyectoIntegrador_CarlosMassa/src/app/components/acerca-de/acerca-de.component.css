@@ -1,0 +1,38 @@
+
+/* Estilo foto de Perfil*/
+img{
+
+padding-top: 0px;
+
+}
+
+
+.row{
+
+background-color: #fac900;
+
+
+}
+
+div{
+
+text-align: center;
+
+}
+#nombre{
+
+    font-weight: bold;
+    margin-top: 30%;
+   
+
+}
+
+
+.container{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    max-width: 100%;
+}
