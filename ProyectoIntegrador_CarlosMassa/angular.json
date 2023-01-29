@@ -26,14 +26,16 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "https://kit.fontawesome.com/476d1aaf14.css"
+
               
 
             ],
             "scripts": [
 
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
-
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "https://kit.fontawesome.com/476d1aaf14.js" 
 
             ]
           },
