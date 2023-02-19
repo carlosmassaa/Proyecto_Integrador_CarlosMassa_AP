@@ -26,16 +26,16 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css",
-              "https://kit.fontawesome.com/476d1aaf14.css"
+              "src/styles.css"
+              
 
               
 
             ],
             "scripts": [
 
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "https://kit.fontawesome.com/476d1aaf14.js" 
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              
 
             ]
           },
@@ -97,9 +97,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css","node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "src/styles.css","node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@fortawesome/fontaawesome-free/css/all.min.css"
             ],
-            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"]
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.bundle.min.js","node_modules/@fortawesome/fontaawesome-free/js/all.min.js"]
           }
         }
       }
