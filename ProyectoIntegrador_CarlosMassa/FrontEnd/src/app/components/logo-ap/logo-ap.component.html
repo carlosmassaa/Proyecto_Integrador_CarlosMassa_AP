@@ -31,7 +31,8 @@
           <i class="fab fa-codepen"></i>
         </a>-->
      
-        <button type="button" class="btn btn-outline-light" > INGRESO</button>
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"> INGRESO</button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
    
       </div>
       
