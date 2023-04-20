@@ -1,0 +1,43 @@
+
+<header>
+<img src="../../../assets/APLogo.png" id="logoAP"  alt="">
+
+
+
+<div class="icons">
+    <!--
+    <a href=""><img src="../../../assets/linkedin.png" id="linkedin" alt=""></a>
+    <a href=""><img src="../../../assets/github.png" id="github" alt=""></a>
+    <a href=""><img src="../../../assets/instagram.png" id="instagram" alt=""></a>
+    <a href=""><img src="../../../assets/facebook.png" id="facebook" alt=""></a>
+    
+    -->
+    
+    <div class="social-buttons">
+     <!--   <a href="#" target="_blank" class="social-button social-button--facebook" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>-->
+        <a href="https://www.linkedin.com/in/carlosmassabeloso/" target="_blank" class="social-button social-button--linkedin" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="mailto:carlosmassabeloso@gmail.com"  target="_blank" class="social-button social-button--mail" aria-label="mail">
+          <!--<i class="fab fa-snapchat-ghost"></i>-->
+          <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://github.com/carlosmassaa" target="_blank" class="social-button social-button--github" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a><!--
+        <a href="#" target="_blank" class="social-button social-button--codepen" aria-label="CodePen">
+          <i class="fab fa-codepen"></i>
+        </a>-->
+     
+        <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged"> INGRESO</button>
+        <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">CERRAR SESION</button>
+   
+      </div>
+      
+    
+      
+
+    </div>
+</header>
