@@ -21,6 +21,11 @@ h5{font-size:1.25rem;}
 @media (min-width:1200px){
 .container{max-width:1140px;}
 }
+td{
+margin-left: 5px;
+
+}
+
 .row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;}
 .col-lg-12,.col-lg-6{position:relative;width:100%;padding-right:15px;padding-left:15px;}
 .order-first{-ms-flex-order:-1;order:-1;}

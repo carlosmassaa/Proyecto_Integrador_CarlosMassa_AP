@@ -8,6 +8,7 @@
           <h5 class="sub_title">Experiencia</h5>
           <h3 class="main_title">Experiencia Laboral</h3>
           <ul class="line">
+            <button type="button" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
             <li></li>
             <li></li>
             <li></li>
@@ -16,7 +17,7 @@
       </div>
     </div>
     <div class="work_experience">
-      <div class="col-lg-2"><button type="button"></button></div>
+      <div class="col-lg-2"></div>
       <table class="table">
         <tbody>
           <tr *ngFor="let Experiencia of expe">
@@ -26,38 +27,37 @@
                   data-wow-duration="1.3s" data-wow-delay="0.2s"
                   style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
                   <div class="experience_title order-last">
-                    <td class="title">{{Experiencia.nombreE}}</td>
-                    <p>CONDISTELEC</p>
-                    <span class="date">Julio 2022- Diciembre 2022</span>
+                    <h3 class="title">{{Experiencia.nombreE}}</h3>
+                    <p>{{Experiencia.nombreEmpresE}}</p>
+                    <span class="date">{{Experiencia.fechasE}}</span>
                   </div>
                   <div class="experience_number">
-                    <span>01</span>
+                    <span>{{Experiencia.id}}</span>
                   </div>
                   <div class="experience_content order-first">
-                    <td>Experiencia.descrpcionE</td>
-                    <p> Programé distintas aplicaciones de escritorio en Visual Basic para automatizar, optimizar y
-                      mejorar el
-                      relevamiento y actualización distintas datos para subir a la base de datos. Analizar, actualizar y
-                      mejorar código. </p>
+                    
+                    <p> {{Experiencia.descripcionE}} </p>
                   </div>
+                  <td *ngIf="isLogged" ><button routerLink="/editexp/{{Experiencia.id}}">EDITAR</button></td>
+                  <td *ngIf="isLogged" ><button (click)="delete(Experiencia.id)">BORRAR</button></td>
                 </div>
               </div>
-            </div>
+           </div>
             <div class="row">
               <div class="col-lg-12">
                 <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
                   data-wow-duration="1.3s" data-wow-delay="0.5s"
                   style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.5s; animation-name: fadeIn;">
                   <div class="experience_title text-lg-right">
-                    <h3 class="title">Administrador de soporte TI</h3>
-                    <p>CONDISTELEC</p>
-                    <span class="date">Mayo 2022- Diciembre 2022</span>
+                    <h3 class="title">{{Experiencia.nombreE}}<!--Administrador de soporte TI--></h3>
+                    <p>{{Experiencia.nombreEmpresE}}<!--CONDISTELEC--></p>
+                    <span class="date">{{Experiencia.fechasE}}<!--Mayo 2022- Diciembre 2022--></span>
                   </div>
                   <div class="experience_number">
                     <span>02</span>
                   </div>
                   <div class="experience_content">
-                    <p>Proporcione a Condistelec asistencia con el hardware y software de sus computadoras. Instalación
+                    <p> {{Experiencia.descripcionE}}<!--Proporcione a Condistelec asistencia con el hardware y software de sus computadoras. Instalación
                       y
                       configuración de sistemas operativos, programas, softwares y aplicaciones en las computadoras para
                       ser
@@ -67,11 +67,11 @@
                       empresa.
                       Resolver problemas encontrando soluciones a fallas y errores en los distintos programas.
                       Relevamientos
-                      de inforemesde de Hardware. </p>
+                      de inforemesde de Hardware. --></p>
                   </div>
                 </div>
               </div>
-            </div>
+            </div><!--
             <div class="row">
               <div class="col-lg-12">
                 <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
@@ -99,7 +99,7 @@
               </div>
             </div>
           </tr>
-        </tbody>
+        </tbody>-->
       </table>
     </div>
   </div>

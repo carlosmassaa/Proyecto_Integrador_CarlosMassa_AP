@@ -9,19 +9,28 @@ public class dtoExperiencia {
     @NotBlank
     private String nombreE;
     @NotBlank
-    private String descipcionE;
-    
-    
+    private String descripcionE;
+    @NotBlank
+    private String nombreEmpresE;
+    @NotBlank
+    private String fechasE;
     
     //Constructor
 
     public dtoExperiencia() {
     }
 
-    public dtoExperiencia(String nombreE, String descipcionE) {
+    public dtoExperiencia(String nombreE, String descripcionE, String nombreEmpresE, String fechasE) {
         this.nombreE = nombreE;
-        this.descipcionE = descipcionE;
+        this.descripcionE = descripcionE;
+        this.nombreEmpresE = nombreEmpresE;
+        this.fechasE = fechasE;
     }
+
+
+
+
+
     
     //Getter and Setter 
 
@@ -33,12 +42,31 @@ public class dtoExperiencia {
         this.nombreE = nombreE;
     }
 
-    public String getDescipcionE() {
-        return descipcionE;
+    public String getDescripcionE() {
+        return descripcionE;
     }
 
-    public void setDescipcionE(String descipcionE) {
-        this.descipcionE = descipcionE;
+    public void setDescripcionE(String descripcionE) {
+        this.descripcionE = descripcionE;
     }
+
+    public String getNombreEmpresE() {
+        return nombreEmpresE;
+    }
+
+    public void setNombreEmpresE(String nombreEmpresE) {
+        this.nombreEmpresE = nombreEmpresE;
+    }
+
+    public String getFechasE() {
+        return fechasE;
+    }
+
+    public void setFechasE(String fechasE) {
+        this.fechasE = fechasE;
+    }
+
+    
+    
     
 }
