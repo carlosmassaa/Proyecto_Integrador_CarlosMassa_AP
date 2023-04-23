@@ -1,0 +1,10 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/carlosmassaa/Proyecto_Integrador_CarlosMassa_AP
+	fetch = +refs/*:refs/*
+	mirror = true
