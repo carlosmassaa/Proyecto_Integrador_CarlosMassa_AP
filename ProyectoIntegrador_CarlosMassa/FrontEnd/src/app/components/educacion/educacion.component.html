@@ -7,8 +7,8 @@
         <div class="section_title text-center pb-30">
           <h5 class="sub_title">Educación</h5>
           <h3 class="main_title">Recorrido Educacional</h3>
-          <button type="button" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educacion</button>
-          <ul class="line"> 
+          <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">Agregar Educacion</button>
+          <ul class="line">
             <li></li>
             <li></li>
             <li></li>
@@ -19,28 +19,28 @@
     <div class="work_experience">
       <div class="row">
         <tr *ngFor="let Educacion of educacion">
-        <div class="col-lg-12">
-          <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn" data-wow-duration="1.3s"
-            data-wow-delay="0.2s"
-            style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
-            <div class="experience_title order-last">
-              <h3 class="title">{{Educacion.nombreE}} <!--Desarrollador Web Full Stack--></h3>
-              <p>{{Educacion.nombreEmpresaE}} <!--Argentina Programa--></p>
-              <span class="date">{{Educacion.fechasE}}<!--Octubre 2022- Mayo 2023--></span>
+          <div class="col-lg-12">
+            <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn" data-wow-duration="1.3s"
+              data-wow-delay="0.2s"
+              style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.2s; animation-name: fadeIn;">
+              <div class="experience_title order-last">
+            
+                <h3 class="title">{{Educacion.nombreE}} <!--Desarrollador Web Full Stack--></h3>
+                <p>{{Educacion.nombreEmpresaE}} <!--Argentina Programa--></p>
+                <span class="date">{{Educacion.fechasE}}<!--Octubre 2022- Mayo 2023--></span>
+              </div>
+              <div class="experience_number">
+                <span>{{Educacion.id}}</span>
+              </div>
+              <div class="experience_content order-first">
+                <p> {{Educacion.descripcionE}}<!-- --></p>
+              </div>
+              
+              <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">EDITAR</button></td>
+              <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Educacion.id)">BORRAR</button></td>
             </div>
-            <div class="experience_number">
-              <span>01</span>
-            </div>
-            <div class="experience_content order-first">
-              <p> {{Educacion.descripcionE}}<!--Programé distintas aplicaciones de escritorio en Visual Basic para automatizar, optimizar y mejorar el
-                relevamiento y actualización distintas datos para subir a la base de datos. Analizar, actualizar y
-                mejorar código. --></p>
-            </div>           
-            <td *ngIf="isLogged" ><button routerLink="/editedu/{{Educacion.id}}">EDITAR</button></td>
-            <td *ngIf="isLogged" ><button (click)="delete(Educacion.id)">BORRAR</button></td>
           </div>
-        </div>
-      </div>
+      </div><!--
       <div class="row">
         <div class="col-lg-12">
           <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn" data-wow-duration="1.3s"
@@ -87,7 +87,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </body>

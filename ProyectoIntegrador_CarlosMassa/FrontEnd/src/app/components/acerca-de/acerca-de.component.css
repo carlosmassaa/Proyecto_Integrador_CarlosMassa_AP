@@ -56,10 +56,8 @@ text-align: center;
 }
 body{
     font-family: 'Poppins', sans-serif;
-}/*
-.about-wrapper{
-    height: 100vh;
-}*/
+}
+
 .about-left{
     background-color: #fac900;
     background-image: linear-gradient(19deg, #fac900 0%, #18488a 100%);
@@ -74,7 +72,7 @@ body{
 }
 .about-left-content > div{
     background: #12192c;
-   /* padding: 4rem 4rem 2.5rem 5rem;*/
+   
     padding-top: 4rem;
     padding-bottom: 4rem;
     padding-left: auto;

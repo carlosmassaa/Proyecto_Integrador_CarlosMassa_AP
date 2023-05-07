@@ -1,3 +1,9 @@
+<head>
+
+
+
+
+</head>
 <body>
 
 
@@ -7,8 +13,8 @@
         <div class="section_title text-center pb-30">
           <h5 class="sub_title">Experiencia</h5>
           <h3 class="main_title">Experiencia Laboral</h3>
+          <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
           <ul class="line">
-            <button type="button" routerLink="/nuevaexp" *ngIf="isLogged">Nueva Experiencia</button>
             <li></li>
             <li></li>
             <li></li>
@@ -38,11 +44,13 @@
                     
                     <p> {{Experiencia.descripcionE}} </p>
                   </div>
-                  <td *ngIf="isLogged" ><button routerLink="/editexp/{{Experiencia.id}}">EDITAR</button></td>
-                  <td *ngIf="isLogged" ><button (click)="delete(Experiencia.id)">BORRAR</button></td>
+                  <td *ngIf="isLogged" ><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">EDITAR</button></td>
+                  <td *ngIf="isLogged" ><button class="btn btn-danger" (click)="delete(Experiencia.id)">BORRAR</button></td>
                 </div>
               </div>
            </div>
+           <div id="experiencias-container"></div>
+
             <div class="row">
               <div class="col-lg-12">
                 <div class="single_experience d-lg-flex align-items-center flex-wrap wow fadeIn"
@@ -50,6 +58,8 @@
                   style="visibility: visible; animation-duration: 1.3s; animation-delay: 0.5s; animation-name: fadeIn;">
                   <div class="experience_title text-lg-right">
                     <h3 class="title">{{Experiencia.nombreE}}<!--Administrador de soporte TI--></h3>
+
+                    
                     <p>{{Experiencia.nombreEmpresE}}<!--CONDISTELEC--></p>
                     <span class="date">{{Experiencia.fechasE}}<!--Mayo 2022- Diciembre 2022--></span>
                   </div>

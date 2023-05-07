@@ -6,6 +6,10 @@ background-color: #12192c;
 
 height: 1000px;
 
+border-top-color: #fff;
+border-top-width: medium;
+border-top-style: solid;
+
 }
 
 
@@ -13,8 +17,10 @@ height: 1000px;
 	 margin: 20px 0 40px;
 	 font-family: "Open Sans", sans-serif;
 	 color: #fff;
-	 
+
 }
+
+
  .skills {
 	color: #fff;
 	 width: 80%;
@@ -23,6 +29,7 @@ height: 1000px;
 	 height: 788px;
 	 margin: auto;
 	 position: relative;
+
 	 
 }
  .lines {
